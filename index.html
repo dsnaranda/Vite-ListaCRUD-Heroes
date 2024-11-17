@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heroes</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo"> Heroes </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="container-h" id="container-form">
+        <form id="formulario-heroes" class="mb-4">
+          <div class="col">
+            <label for="codigo" class="form-label">Código</label>
+            <input type="number" id="codigo" class="form-control" placeholder="Ingrese el código" required>
+          </div>
+          <div class="col">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Ingrese el nombre" required>
+          </div>
+          <div class="col">
+            <label for="edad" class="form-label">Edad</label>
+            <input type="number" id="edad" class="form-control" placeholder="Ingrese la edad" required>
+          </div>
+          <div class="col">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input type="text" id="ciudad" class="form-control" placeholder="Ingrese la ciudad" required>
+          </div>
+          <div class="col">
+            <label for="imagen" class="form-label">Ciudad</label>
+            <input type="text" id="imagen" class="form-control" placeholder="Ingrese un url" required>
+          </div>
+          <button type="button" id="btn-agregar" class="btn btn-primary">Agregar</button>
+        </form>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6" id="product-section">
+          <h2 class="text-center">Lista de Héroes</h2>
+          <button id="btn-open" class="btn btn-primary">Añadir producto</button>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+                <th>Imagen</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="lista-h">
+              <!-- Aquí se mostrarán los héroes -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+
+</body>
+
+</html>

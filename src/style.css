@@ -1,0 +1,151 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #333;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 80px; /* Añadir margen inferior para el footer */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #333;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+#product-section, #cart-section {
+  min-width: 100%; /* Asegurarse de que el contenedor tenga un ancho mínimo del 100% */
+  min-height: 500px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+#product-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+footer {
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 60px; /* Asegúrate de que la altura del footer sea la misma que el margen inferior del contenedor */
+}
+
+.nav-buttons {
+  position: absolute;
+  right: 20px;
+}
+
+.nav-button {
+  margin-left: 10px;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form button {
+  width: 100%;
+}
+
+/* 
+.modal {
+  display: none; 
+}
+
+.modal.active {
+  display: block; 
+} */
+
+.container-h {
+  display: none;
+}
+
+.container-h.show {
+  display: block;
+}
